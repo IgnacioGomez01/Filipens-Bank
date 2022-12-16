@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filipens Bank |</title>
+        <link rel="shortcut icon" href="./assets/logo final/logoPrincipal.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body class="bodyAccount">
+    <div id="app">
+    <header class="navAccount">
+    <nav class="navAccount">
+          <a class="aNav" href="">
+              <img class="logo" src="./assets/logo final/logoPrincipal.png" alt="">
+          </a>
+          <h4 class="fBank">Filipens Bank</h4>
+        <div class="botonesNav">
+          
+            <a href="">Notifications<i class="bi bi-bell"></i></a>
+            <a @click="cerrarSesion" href="./index.html">Log out<i class="bi bi-box-arrow-in-right"></i></a>
+          
+        </div>  
+        </nav>  
+  </header>
+
+   <div class="padre">
+
+        <h3 class="h3Transfer"> Apply for Loan <i class="bi bi-cash-coin"></i></i></h3>
+
+        </div>
+
+    <main class="mainTransfers">
+        
+        <button  class="cardsRedireccion" > <a :href="'./accounts.html'" class="cardsRedireccion1" style="text-decoration:none">Return</a></button>
+
+      <div class="centroTransfers">
+
+       <div class="cuentasTransferencia">
+        
+
+
+      <div class="contenedorDeForm">
+        <form action="../../form-result.php" target="_blank">
+          
+             <p class="pLoans">  Type of Loan:</p>
+              
+                    <select class="form-select" name="source" v-model="loanName"  aria-label="Default select example">
+                       
+                        {{loanSelector}}
+
+                        <template v-for="loan of loans">
+
+                        
+                        <option :value="loan.name" > {{loan.name}} </option>
+                       
+                        
+                        </template>
+                    
+                    </select>
+                    
+                 
+                </template>
+              
+              </select>
+              
+          
+            </p>
+          
+          </form>
+
+          <form action="../../form-result.php" target="_blank">
+
+          
+             <p class="pLoans"> amount of Fees:</p>
+          
+                
+
+             <select class="form-select" v-model="request.payment" name="source" aria-label="Default select example">
+                       
+                <template v-for="payment in payments">
+
+                
+                <option :value="payment">{{payment}}</option>
+                
+                </template>
+            
+            </select>
+          
+          
+            </p>
+          
+          </form>
+        </div>
+        
+        <div class="amountNumber">
+
+          <p class="pLoans">Requested Balance :</p>
+
+            <input type="Number" v-model="request.amount" class="formularioCantidad" min="0" :max="selectedLoan.maxAmount" placeholder="Ej: $ 20.000"  >
+          
+        </div>
+
+    <div class="descriptionTransfer">
+
+        <p class="pLoans"> Select loan account: </p>
+
+        <select class="form-select" v-model="request.accountDestinit" name="source" aria-label="Default select example">
+                       
+            <template v-for="account of accounts">
+
+
+            <option :value="account.number">{{account.number}}</option>
+
+            
+            </template>
+        
+        </select>
+        
+        <p v-show="request.amount != 0" class="py-2 text-center">The value of the monthly installments will be: $ {{CalcularPagos}} </p>
+        
+    </div>   
+
+    <button class="sendBottonLoans" @click="alerta" >
+      <div class="svg-wrapper-1">
+        <div class="svg-wrapper">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path fill="none" d="M0 0h24v24H0z"></path>
+           <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"> </path>
+          </svg> 
+        </div>
+      </div> 
+     <span> Send </span> 
+    </button>
+</div>  
+
+    </main>
+    
+    
+    </div>  
+
+    
+
+    <section class="footerTransfers">
+        <!-- Footer -->
+        <footer class="footerTransfers text-center text-white" style="background-color: #0a4275;">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: CTA -->
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Register for free</span>
+                
+              </p>
+            </section>
+            <!-- Section: CTA -->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white">Filipens Bank</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+<script src="./loan-application.js"></script>
+</body>
+</html>

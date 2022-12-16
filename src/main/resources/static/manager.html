@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homebanking</title>
+  <link rel="stylesheet" href="./Style.css">
+</head>
+<div id="app">
+  <nav>
+    <h1>Homebanking</h1>
+  </nav>
+
+  <body>
+
+    <section>
+      <main class="main">
+        <div class="clientManaList">
+
+          <h2>Client Manager</h2>
+          <div class="orden">
+          <label for=""> Name 
+            <input v-model="nombre" type="text" />
+          </label>
+
+          <label for=""> Last name: 
+            <input v-model="apellido" type="text" />
+          </label>
+
+          <label for=""> Email address:
+            <input v-model="email" type="email" />
+          </label>
+
+          <button @click="addClient">Add Client</button>
+        </div>
+        
+        <h2>Client list</h2>
+        <table>
+          
+          <thead>
+            <tr>
+              <th>First name</th>
+              <th>Last name</th>
+              <th>E-mail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="cliente of clientes">
+              <td>{{cliente.firstName}}</td>
+              <td>{{cliente.lastName}}</td>
+              <td>{{cliente.email}}</td>
+              <td><button class="btnBorrar" v-on:click="borrarCliente(cliente)">X</button></td>
+              <td><button class="btnEditar" v-on:click="">edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <form>
+        <div class="datajson">
+        <h2>Client REST response</h2>
+        <pre>{{datajson}}</pre>
+        </div>
+      </main>
+    </section>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+<script src="./manager.js"></script>
+</body>
+
+</html>

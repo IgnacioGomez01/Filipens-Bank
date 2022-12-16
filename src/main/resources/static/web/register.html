@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filipens Bank |</title>
+        <link rel="shortcut icon" href="./assets/logo final/logoPrincipal.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    <header>
+        <nav>
+              <a class="aNav" href="./inicio.html">
+                  <img class="logo" src="./assets/logo final/logoPrincipal.png" alt="">
+              </a>
+              <h4 class="fBank">Filipens Bank</h4>
+            <div class="botonesNav">
+              <a class="personas" href="./index.html" active>People</a>
+              <a class="solicitudTurno" href="#">Become a Client</a>
+              <a class="botonHomeBanking" href="./login.html">Home Banking</a>
+            </div>  
+            </nav>  
+      </header>
+      <body class="bodyHomeBanking" id="app">
+        <section>
+          <div class="skewed"></div>
+        </section>
+        <h2 class="welcomeRegister">Create you Acount</h2>
+        <main class="mainHomeBanking">
+        
+        <div class="imgClientes">
+          <img class="imagenLogear" src="./assets/Sin título-1.png" alt="">
+        </div>
+        <form class="formularioCreated">
+         
+          <div class="form-group"> <!-- Dni -->
+            <label for="full_dni_id" class="control-label">First Name</label>
+            <input type="text" v-model="firstName" class="form-control" id="full_dni_id" name="full_dni" placeholder="Johnny">
+        </div>
+          <div class="form-group"> <!-- Full Name -->
+              <label for="full_name_id" class="control-label">Full Name</label>
+              <input type="text" v-model="lastName" class="form-control" id="full_name_id" name="full_name" placeholder="Deep">
+          </div>    
+      
+          <div class="form-group"> <!-- gmail -->
+              <label for="gmail_id" class="control-label">Email</label>
+              <input type="text" v-model="email" class="form-control" id="email_id" name="email1" placeholder="example@gmail.com">
+          </div>                    
+                                   
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input v-model="password" type="password" class="form-control" placeholder="********" id="pwd">
+          </div>                                     
+      
+          <div class="grupoBotones">
+          <div class="form-group"> <!-- Submit Button -->
+              <button @click.prevent="registrar()" type="submit" class="botonRegistrar btn btn-primary">Create Acount</button>
+          </div>    
+          <h6 class="oh6">O</h6>
+          <div class="form-group"> <!-- Submit Button -->
+            <button type="submit" class="botonCreate btn btn-primary"><a id="botonCreate" href="./login.html">Login</a></button>
+        </div>   
+      </div>  
+      </form>
+    </main>
+
+
+
+
+
+
+ 
+
+
+
+
+  <section class="footerLogin">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #0a4275;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Register for free</span>
+            
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white">Filipens Bank</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </section>
+
+   <!-- JavaScript Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>  
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+   <script src="./register.js"></script>
+  </body>
+</html>

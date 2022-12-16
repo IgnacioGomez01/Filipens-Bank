@@ -1,0 +1,1905 @@
+* {
+ /*  border: 1px red solid; */
+  margin: 0;
+  padding: 0;
+
+}
+
+nav {
+  display: flex;
+  text-align: center;
+  /* border: 1px red solid; */
+  background-color: #072146;
+  width: 100%;
+  min-height: 5rem;
+  display: flex;
+  height: 13.6vh;
+  align-items: center;
+}
+
+.logo {
+  height: 60%;
+  margin-left: 5rem;
+
+}
+
+.aNav {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.botonesNav {
+  display: flex;
+  width: 30rem;
+  height: 100%;
+  margin-right: 5rem !important;
+  justify-content: center;
+  margin-bottom: 1rem;
+  /* border: 1px solid red; */
+}
+
+.botonesNav a {
+  text-decoration: none;
+  height: 100%;
+  width: 8rem;
+}
+
+.fBank {
+  color: #fffbfc;
+  font-size: 2rem;
+  margin-left: 0.5rem;
+  margin-right: 30rem;
+}
+
+.fBankFooter {
+  color: white;
+  justify-content: center;
+  margin-left: 30rem;
+  font-size: 1.5rem;
+}
+
+/* body */
+
+body {
+  background-color: rgb(223, 223, 223);
+  height: 100vh !important;
+}
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  /* border: 1px red solid; */
+  margin-left: 40%;
+  font-size: 55px;
+  background-color: #7b506f;
+}
+
+
+
+form {
+  width: 50%;
+  /* border: 1px red solid;  */
+}
+.CREDIT{
+  background-color: rgb(0, 201, 0);
+  color: white;
+}
+.DEBIT{
+  background-color: red;
+  color: rgb(255, 255, 255);
+}
+table {
+  width: 100%;
+  border: 1px black solid;
+  margin-top: 1rem;
+}
+.movementsBoton{
+  font-size: 1.2rem;
+  text-decoration: none;
+  border: black 1px solid;
+  height: 2.5rem;
+  width: 6.4rem ;
+  background-color: #072146;
+  color: white;
+}
+.datajson {
+  width: 100%;
+}
+
+input {
+  flex-direction: column;
+  width: 99%;
+  margin-top: 0.3rem;
+
+}
+
+.orden {
+  /* border: 1px red solid; */
+  height: 20rem;
+  width: 14rem;
+  margin-top: 1rem;
+  margin-left: 42%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.h2Accounts{
+  margin-top: 3rem;
+}
+
+.clientManaList {
+  width: 50%;
+  height: 100vh;
+  padding-left: 1rem;
+}
+
+th {
+  border: 1px solid black !important;
+  text-align: start;
+}
+
+button {
+  padding: 0.3rem;
+  background-color: #6c7adf;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1rem;
+}
+
+.btnBorrar {
+  background-color: red;
+
+}
+
+.carousel-item img {
+  height: 70vh !important;
+  object-fit: cover !important;
+}
+
+.cardArgentina {
+  position: absolute;
+  top: 26%;
+  right: 33%;
+  background-color: white;
+  border-radius: 2px;
+  width: 25rem;
+  height: 12rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 3px 0px 0px;
+  padding: 1rem;
+  background-color: rgb(223, 223, 223);
+}
+
+.cardArgentina h4 {
+  width: 20rem;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.button-48 {
+  appearance: none;
+  background-color: #4990f4;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+  border: 1px solid black;
+  bottom: 30px;
+  left: 70px;
+
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #3181d1;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 span {
+  z-index: 1;
+  position: relative;
+}
+
+.carousel-control-prev-icon {
+  border: grey 2px solid;
+}
+
+.carousel-control-next-icon {
+  border: grey 2px solid;
+}
+
+.cardAsistencia {
+  position: absolute;
+  top: 30%;
+  right: 18%;
+  background-color: rgb(223, 223, 223);
+  border-radius: 2px;
+  width: 25rem;
+  height: 12rem;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 3px 0px 0px;
+  padding: 1rem;
+}
+
+.cardAsistencia h4 {
+  margin-bottom: 2rem !important;
+}
+.todasCartitas{
+  width: 100% !important;
+  justify-content: space-between !important;
+}
+.contaDiv{
+  width: 100% !important;
+}
+.divTituloAccounts{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.cartita{
+  margin-right: 0px;
+}
+footer {
+
+  text-align: center;
+  width: 100%;
+}
+
+
+.botonFooter {
+  margin-bottom: 1.5rem;
+}
+
+/* home banking */
+h2 {
+  text-align: center;
+  /* border: 1px black solid; */
+
+}
+
+.createHomeBanking {
+  display: flex;
+  width: 15rem;
+  height: 19rem;
+  justify-content: center;
+  margin-left: 35rem;
+  text-align: center;
+  margin-top: 0rem;
+  /* border: 3px rgb(130, 129, 129) solid; */
+}
+
+.createHomeBanking button {
+  margin-top: 2rem;
+}
+
+.mainHomeBanking {
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  width: 80%;
+  margin-right: 10% !important;
+  margin-left: 10% !important;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem !important;
+}
+
+.mainHomeBanking div {
+  display: block;
+  margin: 1rem 1rem;
+}
+
+
+.fBankFooterHomeBanking {
+  color: white;
+}
+.footerCards{
+  height: 20vh;
+}
+.mainCards{
+  height: 60vh;
+  width: 100%;
+}
+/*===== BLOG STYLE ONE =====*/
+.blog-style-one {
+  margin-top: 50px;
+}
+
+.blog-style-one .blog-image {
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+}
+
+.blog-style-one .blog-image .category {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 13px;
+  padding: 7px 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border-radius: 30px;
+}
+
+.blog-style-one .blog-image img {
+  width: 100%;
+  -webkit-transition: all 0.2s ease-out 0s;
+  -moz-transition: all 0.2s ease-out 0s;
+  -ms-transition: all 0.2s ease-out 0s;
+  -o-transition: all 0.2s ease-out 0s;
+  transition: all 0.2s ease-out 0s;
+}
+
+.blog-style-one .blog-image:hover img {
+  -webkit-transform: rotate(1deg) scale(1.1);
+  -moz-transform: rotate(1deg) scale(1.1);
+  -ms-transform: rotate(1deg) scale(1.1);
+  -o-transform: rotate(1deg) scale(1.1);
+  transform: rotate(1deg) scale(1.1);
+}
+
+.blog-style-one .blog-content {
+  padding: 30px;
+  border: 1px solid var(--light-1);
+  border-radius: 0 0 8px 8px;
+  border-top: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .blog-style-one .blog-content {
+    padding: 25px;
+  }
+
+
+}
+
+@media (max-width: 767px) {
+  .blog-style-one .blog-content {
+    padding: 20px;
+  }
+}
+
+.blog-style-one .blog-content .blog-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.blog-style-one .blog-content .blog-title a {
+  font-weight: 600;
+  color: var(--black);
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  line-height: 30px;
+}
+
+@media (max-width: 767px) {
+  .blog-style-one .blog-content .blog-title a {
+    line-height: 24px;
+  }
+}
+
+.blog-style-one .blog-content .blog-title a:hover {
+  color: var(--primary);
+}
+
+.blog-style-one .blog-content span {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--dark-3);
+  margin-top: 8px;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.blog-style-one .blog-content .text {
+  color: var(--dark-3);
+  margin-top: 16px;
+}
+
+.blog-style-one .blog-content .more {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--primary);
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.blog-style-one .blog-content .more:hover {
+  color: var(--primary-dark);
+}
+
+/*# sourceMappingURL=blog-01.css.map */
+
+.divCartas {
+  background-color: #072146;
+  color: white;
+  padding: 2rem 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.cartita {
+  border: 1px rgb(181, 181, 181) solid;
+  border-radius: 3px;
+}
+.cartita1 {
+  border: 1px rgb(181, 181, 181) solid;
+  border-radius: 3px;
+}
+
+.bodyAccount {
+  margin-top: 0px;
+  background-image: url(./assets/fondo/fondoCuentas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 190vh !important;
+}
+.fondoTransfers {
+ position: absolute;
+ z-index: -1;
+ height: 10% !important;
+ width: 100% !important;
+ object-fit: cover;
+
+  
+}
+.fondoTransfers img{
+  width: 100%;
+  height: 110vh;
+  opacity: 0.75;
+}
+
+.tablaClasse{
+  background-color: rgb(230, 230, 230);
+    width: 80%;
+    justify-content: center;
+    height: 50%;
+    margin-left: 13rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+@keyframes deslizar5 {
+  from {
+    transform: translateX(50rem);
+  }
+}
+
+
+.padre {
+  margin-top: 3rem;
+}
+
+.padre h3 {
+  font-size: 1.5rem !important;
+  margin-left: 10%;
+  margin-top: 1%;
+
+}
+
+.cadaCaja{
+  margin-top: 2rem;
+  margin-bottom: 0px;
+}
+
+.account {
+  background-color: rgb(223, 223, 223);
+}
+
+.navAccount {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+.formularioCreated {
+
+  /* flex-direction: column; */
+  align-items: center;
+  width: 30%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: inline-block
+}
+
+.imgClientes img {
+  /* display: flex; */
+  width: 25rem;
+  height: 25rem;
+  margin-top: 2rem;
+}
+
+.imagenLogear {
+  animation: deslizar 1s alternate;
+}
+.footerAccounts{
+  margin-top: 2.8rem !important;
+  height: 8rem;
+}
+.returnAccounts{
+  text-decoration: none;
+  border: 1px black solid;
+  background-color:#072146 !important;
+  color: white;
+  height: 2rem;
+  width: 5rem;
+  font-size: 1rem;
+  margin-left: 80%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.cajaReturn{
+  display: flex;
+  margin-top: 0px !important;
+}
+@keyframes deslizar {
+  from {
+    transform: translateX(-50rem);
+  }
+}
+
+@keyframes deslizar1 {
+  from {
+    transform: translateX(50rem);
+  }
+}
+
+@keyframes deslizar2 {
+  from {
+    transform: translateX(50rem);
+  }
+}
+
+.pcImg {
+  width: 70% !important;
+  animation: deslizar2 2s normal;
+
+}
+
+
+
+.contaDiv {
+  animation: deslizar 5s alternate;
+}
+
+@media (max-width: 2560px){
+  .botonesNav{
+    position: absolute;
+    right: 0.5rem;
+    height: 5.6rem;
+    top: -3rem;
+    /* margin-bottom: 0rem; */
+  }
+  .mainHomeBanking{
+    margin-top: 3rem;
+    margin-bottom: 4rem !important;
+  }
+  .cardArgentina{
+    left: 43%;
+    width: 27rem;
+    height: 12rem;
+  }
+  .botonesNav{
+    margin-top: 3rem;
+    margin-right: 1rem;
+  }
+  .mainHomeBanking{
+    margin-bottom: 4rem !important;
+    margin-top: 4rem!important;
+  }
+  .footerLogin{
+    margin-top: 0px !important;
+  }
+  .footerAccount{
+    margin-top: 1.1rem;
+    height: 8rem;
+  }
+  .mainTransfers{
+    margin-left: 12%;
+  }
+  
+}
+
+@media  (max-width: 1440px) {
+  
+  .cardArgentina{
+    left: 37%;
+  }
+
+  .botonesNav a{
+    height: 50% !important;
+    margin-top: 1rem;
+  }
+  .botonesNav{
+    margin-left: 8rem;
+  }
+  
+  .footerAccount{
+    margin-top: 30px !important;
+  }
+  
+  .headerAccounts{
+    height: 20vh;
+  }
+  .mainHomeBanking{
+    margin-bottom: 4rem !important;
+    margin-top: 4rem!important;
+  }
+  
+  .tablaClasse{
+    margin-left: 7rem;
+    margin-top: 4rem;
+  }
+  .mainTransfers{
+    margin-left: 0%;
+  }
+}
+@media (max-width: 1024px) {
+  
+  .cardArgentina{
+    left: 30%;
+    margin-top: 2rem;
+  }
+  .cardAsistencia{
+    left: 30%;
+    margin-top: 2rem;
+  }
+  .botonesNav{
+    margin-left: -1rem;
+  }
+  .botonesNav a{
+    height: 50% !important;
+    margin-top: 2rem ;
+  }
+  .mainHomeBanking{
+    margin-top: 3.1rem;
+  }
+  .imgClientes{
+    width: 50%;
+  }
+  .imagenLogear{
+    width: 50%;
+  }
+  .formularioCreated{
+    width: 50%;
+    margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+  }
+  .footerTransfers{
+    margin-top: 0% !important;
+  }
+  .mainTransfers{
+    margin-left: 0%;
+  }
+  .sendBotton{
+    margin-left: 70% !important;
+  }
+  .sendBottonLoans{
+    margin-left: 300rem !important;
+  }
+}
+  
+  .footerAccount{
+    margin-top: 0rem;
+  }
+  
+ 
+  
+  .tituloTabla{
+    text-align: center !important;
+    margin-bottom: 0px !important;
+    margin-top: 0rem !important;
+  }
+  .tablaDeAccounts{
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+  }
+  .cadaCaja{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important; 
+  }
+  .contenidoTabla{
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+  }
+ 
+  .footerAccount{
+    height: 15.4vh !important;
+    
+  }
+  .botonesNav a{
+    height: 50% !important;
+    margin-top: 2rem;
+    
+  }
+  .mainHomeBanking{
+    margin-bottom: 4rem !important;
+    margin-top: 4rem!important;
+  }
+
+  .tablaClasse{
+    margin-left: 6rem;
+  }
+
+@media (max-width: 768px){
+  #app{
+    background-color: #202124;;
+  }
+  .newSystem{
+    color: white;
+  }
+  .botonesNav{
+    margin-left: -17rem;
+  }
+  .botonesNav a{
+    height: 70% !important;
+    text-align: center !important;
+    margin-top: 0.5rem;
+  }
+  .cardArgentina{
+    left: 25%;
+    margin-top: 2rem;
+  }
+  .cardAsistencia{
+    left: 25%;
+    margin-top: 2rem;
+  }
+  .imgClientes{
+    width: 50% !important;
+  }
+  .imagenLogear{
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+  }
+  .formularioCreated{
+    width: 50%;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  .centroTransfers{
+  margin-left: 15rem !important;
+  margin-bottom: 0px !important;
+}  
+
+
+
+  
+  .navAccount{
+    height: 8vh;
+   
+  }
+  .footerAccount{
+    margin-bottom: -10rem !important;
+    height: 14vh !important;
+    margin-top: 0rem !important;
+  }
+  
+  
+.padre{
+  margin-top: 2.7rem !important;
+}
+
+.mainHomeBanking{
+  margin-bottom: 4rem !important;
+  margin-top: 4rem!important;
+}
+
+.tablaClasse{
+  margin-left: 5rem;
+}
+}
+@media (max-width: 425px) {
+  .botonesNav{
+    margin-left: -25rem;
+    font-size: 0.9rem;
+    width: 12rem;
+    
+  }
+  .botonesNav a{
+    height: 50% !important;
+    margin-top: 0.5rem;
+    
+  }
+  .cardArgentina{
+    left: 0%;
+    margin-top: -7rem;
+    width: 100%;
+  }
+  .cardArgentina button{
+   margin-right: 10rem;
+
+  }
+  .cardAsistencia{
+    left: 0%;
+    margin-top: -8rem;
+    width: 100%;
+  }
+  .carouselCompleto img{
+    height: 26rem !important;
+  }
+  .imgClientes{
+    width: 50% !important;
+    height: 15.5rem !important ;
+  }
+  .imagenLogear{
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0px !important;
+  }
+  .formularioCreated{
+    width: 80%;
+    padding-left: 0rem;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+  
+  .fBank{
+    font-size: 1.5rem;
+  }
+  .logo{
+    margin-left: 1rem;
+  }
+  
+  
+  
+
+  .footerAccount{
+    margin: 0px !important;
+  } 
+  .tablaClasse{
+    margin-left: 2rem;
+  }
+  .cajaReturn{
+    margin-right: 3.5rem;
+  }
+  .cardd{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .appCards{
+    height: 105rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .botonesNav{
+    margin-left: -20rem !important;
+    width: 60% !important;
+  }
+  .cardArgentina{
+    left: 0%;
+    margin-top: -7rem;
+    width: 100%;
+  }
+  .cardArgentina button{
+   margin-right: 10rem;
+
+  }
+  .cardAsistencia{
+    left: 0%;
+    margin-top: -8rem;
+    width: 100%;
+  }
+  .carouselCompleto img{
+    height: 26rem !important;
+  }
+  .imgClientes{
+    display: none !important;
+  }
+  .formularioCreated{
+    width: 100%;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+  
+  .fBank{
+    font-size: 1rem !important;
+    position: absolute;
+    width: 7rem;
+    height: 1rem;
+    margin-top: 3.5rem !important;
+    margin-right: 1rem !important;
+  }
+  .logo{
+    margin-top: -1rem;
+    margin-left: 2rem !important;
+    margin-right: 0px;
+
+  }
+  .mainHomeBanking{
+    margin-bottom: 4rem !important;
+    margin-top: 4rem!important;
+  }
+  
+  .cajaReturn{
+    margin-right: 3rem;
+  }
+  .containPrestamos{
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5.5rem;
+    gap: 1rem;
+  }
+  
+  .cardd{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .appCards{
+    height: 105rem;
+  }
+}
+@media (max-width: 320px){
+  .cardArgentina{
+    left: -4%;
+    margin-top: -7rem;
+    width: 110%;
+  }
+  .cardArgentina button{
+   margin-left: -1rem;
+  }
+  .cardArgentina h4{
+    margin-left: -0.5rem;
+  }
+  .cardAsistencia{
+    left: 0%;
+    margin-top: -8rem;
+    width: 100%;
+  }
+  .imgClientes{
+    display: none !important;
+  }
+  .formularioCreated{
+    width: 100%;
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+}
+  .carouselCompleto img{
+    height: 26rem !important;
+  }
+  .logo{
+    height: 40%;
+    margin-left: 1.8rem !important;
+  }
+  .fBank{
+    position: absolute;
+    width: 5rem;
+    height: 2rem;
+    margin-top: 6.2rem;
+  }
+  .botonesNav{
+    margin-right: 1rem;
+    width: 60%;
+  }
+  .mainHomeBanking{
+    margin-bottom: 4rem !important;
+    margin-top: 4rem!important;
+  }
+  
+  .cajaReturn{
+    margin-right: 2rem;
+  }
+  .containPrestamos{
+    margin-left: 4rem;
+  }
+  
+  .cardd{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .appCards{
+    height: 105rem;
+  }
+}
+
+.containerCuentas{
+  display: flex !important;
+  width: 95%;
+
+}
+.cajaCuentas{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    animation: deslizar 1s alternate;
+}
+.conjuntoCuentas{
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  padding: 10px;
+  border-radius: 10px;
+}
+.containerNumber{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+}
+.numberAccount{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.containerTituloPrecio{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.tituloCuenta{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.balanceCuenta{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.containerCreationButton{
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+.containerBotton{
+
+display: flex;
+justify-content: end;
+}
+.creacionCuenta{
+  
+  display: flex;
+  justify-content: end;
+}
+.mainAccount{
+  min-height: 62vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.menuLateral{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .containerCuentas{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .cajaCuentas{
+    gap: 2rem;
+    width: 90%;
+  }
+  .mainAccount{
+    min-height: 67.8vh;
+  }
+  .nombreCliente{
+    margin-top: 2rem !important;
+    color: white;
+  }
+  .conjuntoCuentas{
+    background-color: rgb(236, 236, 236);
+  }
+  .accountsTexto{
+    color: white;
+  }
+  .movementsBoton{
+    padding: 15px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border: black 1px solid;
+    height: 2.5rem;
+    background-color: #072146;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.bodyAccounts{
+  height: 100%;
+  background-image: url(./assets/fondo/resumen.jpg);
+}
+.mainAccounts{
+  height: 70.3vh;
+}
+.containerAccounts{
+  width: 100%;
+  height: 60%;
+ 
+}
+.tablaClasse{
+  width: 80%;
+  justify-content: center;
+  height: 50%;
+}
+tbody{
+  height: 100% ;
+  width: 100%;
+}
+.nombreCliente{
+  margin-top: 2rem;
+}
+
+.containPrestamos{
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5rem;
+}
+.cardAccounts {
+  width: 12rem;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  transition: all 2.25s;
+  background-color: rgb(127, 204, 240);
+  padding: 5em;
+  transform-style: preserve-3d;
+}
+
+.cardAccounts:hover .content {
+  transform: rotateY(0.5turn);
+}
+
+.front,
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.title {
+  margin-top: 1.5rem;
+  transform: translateZ(5rem);
+  font-size: 1.7rem;
+}
+
+.subtitle {
+  transform: translateZ(2rem);
+}
+
+.back {
+  transform: rotateY(0.5turn);
+  background-color: #009bff;
+}
+
+.description {
+  transform: translateZ(3rem);
+}
+.loansAmount{
+  color: white;
+  font-size: 2rem;
+}
+.loansPayments{
+  color: white;
+}
+.requestedAmount{
+  margin-top: -1rem;
+  font-size: 1rem
+}
+.numberPayments{
+  font-size: 1rem;
+}
+.containTituloLoans{
+  margin-top: 2rem;
+  margin-left: 8.5rem;
+  margin-bottom: 3rem;
+}
+/* ---------------------------------------------- */
+
+.cardd{
+  width: 320px;
+  height: 190px;
+    -webkit-perspective: 600px;
+    -moz-perspective: 600px;
+    perspective:600px;
+    border: none;
+  }
+  
+  .card__part{
+    box-shadow: 1px 1px #aaa3a3;
+      top: 0;
+    position: absolute;
+  z-index: 1000;
+    left: 0;
+    display: inline-block;
+      width: 320px;
+      height: 190px;
+      border-radius: 8px;
+      -webkit-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -moz-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -ms-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -o-transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+  }
+  
+  .card__front{
+    padding: 18px;
+  -webkit-transform: rotateY(0);
+  -moz-transform: rotateY(0);
+  }
+  
+  .card__back {
+    padding: 18px 0;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  }
+  
+  .card__black-line {
+      margin-top: 5px;
+      height: 38px;
+      background-color: #303030;
+  }
+  
+  .card__logo {
+      height: 16px;
+  }
+  
+  .card__front-logo{
+        position: absolute;
+      top: 18px;
+      right: 18px;
+  }
+  .card__square {
+      border-radius: 5px;
+      height: 30px;
+  }
+  
+  .card_numer {
+      display: block;
+      width: 100%;
+      word-spacing: 4px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+  
+  .card__space-75 {
+      width: 75%;
+      float: left;
+  }
+  
+  .card__space-25 {
+      width: 25%;
+      float: left;
+  }
+  
+  .card__label {
+      font-size: 10px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.8);
+      letter-spacing: 1px;
+  }
+  
+  .card__info {
+      margin-bottom: 0;
+      margin-top: 5px;
+      font-size: 16px;
+      line-height: 18px;
+      color: #fff;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  .card__back-content {
+      padding: 15px 15px 0;
+  }
+  .card__secret--last {
+      color: #303030;
+      text-align: right;
+      margin: 0;
+      font-size: 14px;
+  }
+  
+  .card__secret {
+      padding: 5px 12px;
+      background-color: #fff;
+      position:relative;
+  }
+  
+  .card__secret:before{
+    content:'';
+    position: absolute;
+  top: -3px;
+  left: -3px;
+  height: calc(100% + 6px);
+  width: calc(100% - 42px);
+  border-radius: 4px;
+    background: repeating-linear-gradient(45deg, #ededed, #ededed 5px, #f9f9f9 5px, #f9f9f9 10px);
+  }
+  
+  .card__back-logo {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+  }
+  
+  .card__back-square {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+  }
+  
+  .cardd:hover .card__front {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+  
+  }
+  
+  .cardd:hover .card__back {
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+  }
+  .contenedorCartas{
+    position: relative;
+    width: 200px;
+    height: 200px;
+  
+  }
+  .cartaCreada{
+    width: 320px;
+    height: 190px;
+    /* position: absolute; */
+    right: 10rem;
+      -webkit-perspective: 600px;
+      -moz-perspective: 600px;
+      perspective:600px;
+      border: none;
+    }
+    .cartaCreada:hover .card__front {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+  
+  }
+  
+  .cartaCreada:hover .card__back {
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+  }
+    
+  .GOLD{
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  }
+  .SILVER{
+    /* background:
+    -moz-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+  background:
+  -webkit-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+  background:
+  -o-linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1
+  );
+  background:
+  linear-gradient(
+    -72deg,
+    #dedede,
+    #ffffff 16%,
+    #dedede 21%,
+    #ffffff 24%,
+    #454545 27%,
+    #dedede 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedede 72%,
+    #ffffff 80%,
+    #dedede 84%,
+    #a1a1a1 */
+    
+    background: rgb(211,211,211);
+background: linear-gradient(90deg, rgba(211,211,211,1) 49%, rgba(127,140,141,1) 100%);
+  
+  }
+  .SILVER p, .SILVER span{
+    color: black;
+  }
+  .TITANIUM{
+    background:
+    -moz-repeating-linear-gradient(
+    top, #565656, #131313 2px, #565656 1px
+  );
+  background:
+    -o-repeating-linear-gradient(
+    top, #565656, #131313 2px, #565656 1px
+  );
+  background:
+    -webkit-repeating-linear-gradient(
+    top, #565656, #131313 2px, #565656 1px
+  );
+  background:
+    repeating-linear-gradient(
+    top, #565656, #131313 2px, #565656 1px
+  );
+  }
+  .h1Cards{
+    background: none;
+    margin-left: 0rem;
+    padding-top: 1rem;
+  }
+  .cardsRedireccion{
+    margin-left: 4rem !important;
+    padding: 0.8em 1.8em;
+  border: 2px solid  #174ec3;
+  position: relative;
+  overflow: hidden !important;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color:  #174ec3;
+  }
+  .cardsRedireccion::before{
+    content: '';
+ width: 0;
+ height: 300%;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: #174ec3;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+ color: white;
+  }
+
+  .cardsRedireccion:hover::before {
+    width: 105%;
+    color: white;
+   }
+   
+   .cardsRedireccion:hover {
+    color: white;
+   }
+   .cardsRedireccion1:hover{
+    color: white;
+   }
+  
+   .loansRedireccion{
+    margin-left: 4rem !important;
+    padding: 0.8em 1.8em;
+  border: 2px solid  #174ec3;
+  position: relative;
+  overflow: hidden !important;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color:  #174ec3;
+  }
+  .loansRedireccion::before{
+    content: '';
+ width: 0;
+ height: 400%;
+ position: absolute;
+ top: 60%;
+ left: 50%;
+ transform: translate(-50%, -50%) rotate(45deg);
+ background: #174ec3;
+ transition: .5s ease;
+ display: block;
+ z-index: -1;
+ color: white;
+  }
+
+  .loansRedireccion:hover::before {
+    width: 105%;
+    color: white;
+   }
+   
+   .loansRedireccion:hover {
+    color: white;
+   }
+   .loansRedireccion1:hover{
+    color: white;
+   }
+   main.mainHomeBanking {
+    width: 75%;
+    justify-content: center;
+    border-radius: 20px;
+   }
+   #botonCreate{
+    color: white !important;
+    text-decoration: none;
+   }
+   
+   .grupoBotones{
+    display: flex !important;
+    /* border: 1px solid red; */
+    height: 3rem;
+   }
+   .oh6{
+    margin-top: 1rem ;
+   }
+
+   .botonRegistrar{
+    margin-top: -0.8rem !important;
+   }
+   
+   .botonCreate{
+    margin-top: -0.8rem !important;
+   }
+
+   .loginBoton{
+    margin-top: 0rem !important;
+    margin-bottom: -1.7rem !important;
+   }
+   .welcomeRegister{
+    margin-top: 1.5rem;
+    margin-bottom: -1.5rem;
+    text-decoration: double;
+   }
+
+   .welcomeLogin{
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+   }
+   .grupobotonesLogin{
+    display: flex !important;
+   }
+   .createAcountBotton{
+    margin-top: 0px !important;
+    margin-top: -1rem;
+  } 
+.createAcountBotton{
+  margin-bottom: -1.7rem !important;
+}
+.separacionBotonesCuentas{
+  justify-content: space-between;
+  width: 45%;
+  display: flex;
+}
+.centroTransfers{
+  border: 2px solid black ;
+  box-shadow: 3px 4px 0px 0px;
+  width: 50%;
+  display: flex;
+  height: 72vh;
+  margin-left: 22rem;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-bottom: 5rem !important;
+  animation: deslizar 1s alternate;
+}
+.pContenedor{
+  width: 9.5rem;
+  height: 2rem;
+  border: 1px solid black;
+  margin-left: 1rem;
+  
+}
+.pContenedor1{
+  width: 11.4rem;
+  height: 2rem;
+  border: 1px solid black;
+}
+.amountNumber{
+  height: 25%;
+  margin-top: 2rem;
+  height: 4rem;
+}
+.cuentasTransferencia{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 71.3vh;
+  background-color: lavender;
+  padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.descriptionTransfer{
+  height: 25%;
+  margin-top: 2rem ;
+  padding-bottom: 2rem;
+}
+.formularioTransferencia{
+  height: 60%;
+  border: 1px solid black;
+}
+.formularioCantidad{
+  border: 1px solid black;
+}
+.tipoDeCuentaATransferir{
+  display: flex;
+}
+.tipoDeCuentaATransferir label{
+  width: 50%;
+  justify-content: center;
+}
+.tipoDeCuentaATransferir span{
+  margin-left: 32%;
+}
+.contenedorDeForm{
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.mainTransfers{
+  min-height: 70vh;
+}
+.sendBottonLoans{
+  margin-left: 17.5rem !important;
+}
+
+.sendBotton {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 7rem;
+  margin-left: 80%;
+  margin-top: 0% !important;
+}
+ .sendBotton span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+.sendBotton svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+ }
+ 
+ .sendBotton:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+ }
+ 
+ .sendBotton:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+ }
+ 
+ .sendBotton:hover span {
+  transform: translateX(5em);
+ }
+ 
+ .sendBotton:active {
+  transform: scale(0.95);
+ }
+ .sendBottonLoans {
+  font-family: inherit;
+  font-size: 20px;
+  background: royalblue;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 16px !important;
+  overflow: hidden;
+  transition: all 0.2s;
+  width: 7rem;
+  margin-left: 80%;
+  margin-top: 0% !important;
+}
+ .sendBottonLoans span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+.sendBottonLoans svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+ }
+ 
+ .sendBottonLoans:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+ }
+ 
+ .sendBottonLoans:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+ }
+ 
+ .sendBottonLoans:hover span {
+  transform: translateX(5em);
+ }
+ 
+ .sendBottonLoans:active {
+  transform: scale(0.95);
+ }
+ 
+ @keyframes fly-1 {
+  from {
+   transform: translateY(0.1em);
+  }
+ 
+  to {
+   transform: translateY(-0.1em);
+  }
+ }
+ 
+ .h3Transfer{
+  margin-left: 45% !important;
+  padding-top: 20px ;
+ }
+ .cajaConTodoPadre{
+  display: flex;
+  justify-content: center;
+ }
+ .cajaConTodo{
+  width: 85%;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  /* box-shadow: 1px 1px 1px 1px; */
+  margin-bottom: 4rem;
+  background-color: #e9e9e9;
+ }
+ .nombreCliente{
+  color: #072146;
+ }
+ .cuenta1{
+  margin-bottom: 0.5rem;
+  background-color: #fbfbfb;
+  border-radius: 10px;
+ }
+ .bodyHomeBanking{
+  background-image: url(./assets/fondo/login.jpg);
+  background-repeat: no-repeat ;
+  background-size: cover;
+  height: 100vh;
+ }
+ .contenedorResumen{
+    border: 1px black solid;
+    border-radius: 10px;
+    width: 80%;
+    background-color: #e9e9e9;
+ }
+ .contenedorResumenTodo{
+  display: flex;
+  justify-content: center;
+  
+ }
+ .cajaContenedoraTarjetas{
+    border: 1px solid black;
+    width: 85%;
+    border-radius: 1rem;
+    background-color: #fbfbfb;
+    margin-bottom: 5rem;
+    padding-bottom: 1rem;
+    animation: deslizar 1s alternate;
+ }
+ .cajaContenedoraTarjetasConteiner{
+    display: flex;
+    justify-content: center;
+ }
+ .bodyCards{
+    background-image: url(./assets/fondo/fondotarjetas.jpg);
+    background-repeat: no-repeat ;
+  background-size: cover;
+ }

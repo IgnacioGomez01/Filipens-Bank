@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Filipens Bank |</title>
+        <link rel="shortcut icon" href="./assets/logo final/logoPrincipal.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+ <body >
+
+    <div id="app"> 
+
+    <header class="headerAccounts">
+        <nav class="navAccounts">
+              <a class="aNav" href="">
+                  <img class="logo" src="./assets/logo final/logoPrincipal.png" alt="">
+              </a>
+              <h4 class="fBank">Filipens Bank</h4>
+            <div class="botonesNav">
+                <a href="./transfers.html">Transfer <i class="accountsTexto bi bi-info-circle"></i></a>
+                <a href="./cards.html">My Cards <i class="bi bi-credit-card"></i></a>
+                <a href="">Notifications<i class="bi bi-bell"></i></a>
+                <a @click="cerrarSesion" href="#">Log out<i class="bi bi-box-arrow-in-right"></i></a> 
+              
+            </div>  
+            </nav>  
+      </header>
+      
+      <h1 class="h1Cards " >My Cards<i class="bi bi-credit-card"></i></h1> 
+
+      <button  class="cardsRedireccion" > <a :href="'./accounts.html'" style="text-decoration:none">Return</a></button>
+
+      <main class="mainCards d-flex justify-content-evenly align-items-center flex-wrap">
+
+        <div class="cartaCreada">
+            <div class="card__front card__part" :class="colorDeCarta == 'GOLD'? 'GOLD' : colorDeCarta == 'TITANIUM'? 'TITANIUM' : 'SILVER' "  >
+              <img class="card__front-square card__square" src="">
+              <img class="card__front-logo card__logo" src="">
+              <p class="card_numer"> </p>
+              <div class="card__space-75">
+                <span class="card__label">Card holder</span>
+                <p class="card__info"></p>
+              </div>
+              <div class="card__space-25">
+                <span class="card__label">Expires</span>
+                      <p class="card__info"></p>
+              </div>
+            </div>
+            
+            <div class="card__back card__part" :class="colorDeCarta == 'GOLD'? 'GOLD' : colorDeCarta == 'TITANIUM'? 'TITANIUM' : 'SILVER' ">
+              <div class="card__black-line"></div>
+              <div class="card__back-content">
+                <div class="card__secret">
+                  <p class="card__secret--last"></p>
+                </div>
+                <img class="card__back-square card__square" src="">
+                <img class="card__back-logo card__logo" src="">
+                
+              </div>
+            </div>
+        </div>
+        <div>
+            
+            <div>
+            
+                <h5>Type of Card</h5>
+            
+            </div>
+
+        <label>
+            <input type="radio" name="type" value="DEBIT" v-model="tipoDeCarta">
+            <span>Debit</span>
+        </label>
+        <label>
+            <input type="radio" name="type" value="CREDIT" v-model="tipoDeCarta">
+            <span>Credit</span>
+        </label>
+</div>  
+   
+<div>
+
+    <div>
+        <h5>Color of Card</h5>
+    </div> 
+
+    <label>
+        <input type="radio" name="color" value="GOLD"  v-model="colorDeCarta">
+        <span>Gold</span>
+    </label>
+
+    <label>
+        <input type="radio" name="color" value="TITANIUM" v-model="colorDeCarta">
+        <span>Titanum</span>
+    </label>
+
+    <label>
+        <input type="radio" name="color" value="SILVER" v-model="colorDeCarta">
+        <span>Silver</span>
+    </label>
+</div>
+      
+      
+    
+
+<div>
+    <button class="cardsRedireccion"  ><a class="cardsRedireccion1" @click="createCartas" >Create</a> </button>
+</div>
+
+</main>
+</div>
+     <!-- Footer -->
+     <footer class="footerCards text-center text-white" style="background-color: #0a4275;">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+          <!-- Section: CTA -->
+          <section class="">
+            <p class="d-flex justify-content-center align-items-center">
+              <span class="me-3">Register for free</span>
+              
+            </p>
+          </section>
+          <!-- Section: CTA -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white">Filipens Bank</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+      <script src="./card.js"></script>
+    </body>
+</html>
